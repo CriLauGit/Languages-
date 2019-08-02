@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Languages objectives</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="handlebars-v4.1.2.js"></script>
+    <script id="languagesTemp"  type="text/x-handlebars-template">
+      {{#each languages}}
+      <div class="card">
+      {{#if this.modern}}
+        <p>I must learn {{this.name}}.</p>
+        {{else}}
+        <p>When I have time, I will learn {{this.name}}.</p>
+      {{/if}}
+      </div>
+      {{/each}}
+    </script>
+  </head>
+  
+  <body>
+  <h1>Thoughts on languages:</h1>
+  <div id="goals"></div>
+
+  <script src="main.js" type="text/javascript"></script>  
+  </body>
+
+</html>
